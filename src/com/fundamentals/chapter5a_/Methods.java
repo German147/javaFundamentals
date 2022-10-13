@@ -5,10 +5,11 @@ public class Methods {
 
         int uno = 1;
         int dos = 2;
-        public static int calculateSum ( int number1, int number2){
-            int sum = uno + dos;
-            return sum;
-        }
+
+//        public int calculateSum ( int number1, int number2){
+//            int sum = uno + dos;
+//            return sum;
+//        }
 
     }
 }

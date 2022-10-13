@@ -1,7 +1,5 @@
 package algoritmiaCodes.algo;
 
-import java.util.Locale;
-
 public class StringReverse {
 
       //  private static final Logger LOGGER = Logger.getLogger(Runner.class.getName());
