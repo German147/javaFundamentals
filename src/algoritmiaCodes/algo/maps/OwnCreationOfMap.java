@@ -1,18 +1,18 @@
-package algoritmiaCodes.algo.loops;
+package algoritmiaCodes.algo.maps;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class PrintingTheFirstNonRepeatedCharacter {
+public class OwnCreationOfMap {
     public static void main(String[] args) {
-        String x = "SILLYSPIDERS";
+        String x = "algunacadena";
         char y[] = x.toCharArray();
         int size = y.length;
+        int i = 0;
 
         Map<Character, Integer> map = new LinkedHashMap<>();
 
-        int i = 0;
         while (i != size) {
             if (map.containsKey(y[i]) == false) {
                 map.put(y[i], 1);
@@ -23,13 +23,11 @@ public class PrintingTheFirstNonRepeatedCharacter {
             }
             ++i;
         }
-
-        Set<Map.Entry<Character, Integer>> hmap = map.entrySet();
-        for (Map.Entry<Character, Integer> data : hmap) {
-            if (data.getValue() == 1) {
-                System.out.println(data.getKey());
-                System.exit(0);
-            }
+        Set<Map.Entry<Character, Integer>> printMap = map.entrySet();
+        for (Map.Entry<Character, Integer> data : printMap) {
+            System.out.print("Key " + data.getKey() + " ");
+            System.out.println("Value " + data.getValue());
         }
+
     }
 }

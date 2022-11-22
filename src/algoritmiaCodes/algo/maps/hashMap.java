@@ -1,4 +1,4 @@
-package algoritmiaCodes.algo;
+package algoritmiaCodes.algo.maps;
 
 import java.util.HashMap;
 import java.util.TreeMap;

@@ -1,17 +1,16 @@
-package algoritmiaCodes.algo;
+package algoritmiaCodes.algo.maps;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 
-public class ConvertAStringToMap {
-
+public class TreeMapPractice {
     public static void main(String[] args) {
-        String x = "lliiopp";
+        String x = "algunacadena";
         char y[] = x.toCharArray();
         int size = y.length;
         // here I create a map using Character and Integer as a Key Value pair
-        Map<Character, Integer> map = new HashMap<>();
+        Map<Character, Integer> map = new TreeMap<>();
         int i = 0;
         while (i != size) {
             //Here I say if map contains a certain key and if it s false...
@@ -33,10 +32,9 @@ public class ConvertAStringToMap {
         //in order to print the key value pair I use this forEach loop
         Set<Map.Entry<Character, Integer>> hmap = map.entrySet();
         for (Map.Entry<Character, Integer> data : hmap) {
-            System.out.print(data.getKey());
-            System.out.println(data.getValue());
+            System.out.print("Key " + data.getKey() + " ");
+            System.out.println("value  "+ data.getValue());
         }
-
-
+        System.out.println("The number of character is: " + y.length);
     }
 }
