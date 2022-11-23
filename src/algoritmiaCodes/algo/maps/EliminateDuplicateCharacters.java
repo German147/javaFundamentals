@@ -4,14 +4,15 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class PrintDuplicateCharacter {
+public class EliminateDuplicateCharacters {
     public static void main(String[] args) {
-        String x = "German";
+        String x = "saoimmmmestrrringoirnameii";
         char y[] = x.toCharArray();
         int size = y.length;
         int i = 0;
 
         Map<Character, Integer> map = new LinkedHashMap<>();
+
         while (i != size) {
             if (map.containsKey(y[i]) == false) {
                 map.put(y[i], 1);
@@ -22,18 +23,12 @@ public class PrintDuplicateCharacter {
             }
             ++i;
         }
-
-
-        System.out.println(map);
         Set<Map.Entry<Character, Integer>> printMap = map.entrySet();
-
-        for (Map.Entry<Character, Integer> data : printMap) {
-
-            if (data.getValue() > 1){
-                System.out.print(data.getKey());
-                System.out.println(data.getValue());
-            }
-
+        String res = "";
+        for (Map.Entry<Character,Integer> data: printMap) {
+            res = res + data.getKey();
         }
+        System.out.println(res);
+
     }
 }
