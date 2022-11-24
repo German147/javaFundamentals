@@ -28,7 +28,9 @@ public class EliminateDuplicateCharacters {
         for (Map.Entry<Character,Integer> data: printMap) {
             res = res + data.getKey();
         }
-        System.out.println(res);
-
+//        System.out.println(res);
+//        String d = null;
+//        int sizeD = d.length();
+//        System.out.println(sizeD);
     }
 }
