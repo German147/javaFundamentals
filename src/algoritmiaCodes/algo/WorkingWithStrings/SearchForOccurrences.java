@@ -1,4 +1,4 @@
-package algoritmiaCodes.algo;
+package algoritmiaCodes.algo.WorkingWithStrings;
 
 import java.util.*;
 

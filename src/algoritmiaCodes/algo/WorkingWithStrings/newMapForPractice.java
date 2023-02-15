@@ -1,12 +1,12 @@
-package algoritmiaCodes.algo.maps;
+package algoritmiaCodes.algo.WorkingWithStrings;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class CheckIfHasAllUniqueCharacters {
+public class newMapForPractice {
     public static void main(String[] args) {
-        String x = "alguencde";
+        String x = "someStringOfSomeVocabulary";
         char y[] = x.toCharArray();
         int size = y.length;
         int i = 0;
@@ -18,17 +18,16 @@ public class CheckIfHasAllUniqueCharacters {
             } else {
                 int oldValue = map.get(y[i]);
                 int newValue = oldValue + 1;
-                map.put(y[i], newValue);
+                map.put(y[i],newValue);
             }
             ++i;
         }
-        Set<Map.Entry<Character, Integer>> printMessage = map.entrySet();
-        for (Map.Entry<Character, Integer> data : printMessage) {
-            if (data.getValue() > 1) {
-                System.out.println("It does not contain unique character");
-                System.exit(0);
-            }
+        System.out.println(map);
+
+        Set<Map.Entry<Character,Integer>> printMap = map.entrySet();
+        for (Map.Entry<Character,Integer> data : printMap) {
+            System.out.print("Key " + data.getKey());
+            System.out.println(" Value " + data.getValue());
         }
-        System.out.println("This contains all unique characters");
     }
 }

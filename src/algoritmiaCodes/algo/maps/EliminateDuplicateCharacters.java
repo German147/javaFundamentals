@@ -12,7 +12,6 @@ public class EliminateDuplicateCharacters {
         int i = 0;
 
         Map<Character, Integer> map = new LinkedHashMap<>();
-
         while (i != size) {
             if (map.containsKey(y[i]) == false) {
                 map.put(y[i], 1);
@@ -23,14 +22,15 @@ public class EliminateDuplicateCharacters {
             }
             ++i;
         }
+
         Set<Map.Entry<Character, Integer>> printMap = map.entrySet();
         String res = "";
+
         for (Map.Entry<Character,Integer> data: printMap) {
             res = res + data.getKey();
         }
-//        System.out.println(res);
-//        String d = null;
-//        int sizeD = d.length();
-//        System.out.println(sizeD);
+
+        System.out.println(res);
+
     }
 }

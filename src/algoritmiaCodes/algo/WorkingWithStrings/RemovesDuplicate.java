@@ -1,4 +1,4 @@
-package algoritmiaCodes.algo;
+package algoritmiaCodes.algo.WorkingWithStrings;
 
 public class RemovesDuplicate {
     public static void main(String[] args) {

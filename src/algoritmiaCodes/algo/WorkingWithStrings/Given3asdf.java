@@ -1,4 +1,4 @@
-package algoritmiaCodes.algo;
+package algoritmiaCodes.algo.WorkingWithStrings;
 /*3. Given this input: “3[asdf]” you have to generate an output string: asdfasdfasdf
 # Q1
 ## input => “3[asdf]”

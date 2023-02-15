@@ -1,4 +1,4 @@
-package algoritmiaCodes.algo;
+package algoritmiaCodes.algo.WorkingWithStrings;
 
 public class MutableStrings {
     public static void main(String[] args) {

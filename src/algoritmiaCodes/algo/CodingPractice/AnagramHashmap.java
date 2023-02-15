@@ -6,11 +6,11 @@ import java.util.Map;
 public class AnagramHashmap {
 
     public static void main(String[] args) {
-        System.out.println(anagramHashmap("German","Lucas"));
+        System.out.println(anagramHashmap("german","manger"));
     }
     static boolean anagramHashmap(String firstWord, String secondWord) {
 
-        if (!(firstWord.length() == firstWord.length())){
+        if (!(firstWord.length() == secondWord.length())){
             return false;
         } else {
             Map<Character, Integer> firstHashMap = new HashMap<>();

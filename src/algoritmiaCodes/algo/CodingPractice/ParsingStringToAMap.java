@@ -1,9 +1,6 @@
 package algoritmiaCodes.algo.CodingPractice;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class ParsingStringToAMap {
     public static void main(String[] args) {
@@ -13,7 +10,7 @@ public class ParsingStringToAMap {
         int size = y.length;
         int i = 0;
 
-        Map<Character, Integer> myMap = new HashMap<>();
+        Map<Character, Integer> myMap = new LinkedHashMap<>();
 
         while (i != size) {
             if (myMap.containsKey(y[i]) == false) {
