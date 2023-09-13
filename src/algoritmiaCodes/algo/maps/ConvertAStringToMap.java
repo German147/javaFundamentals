@@ -1,6 +1,7 @@
 package algoritmiaCodes.algo.maps;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -11,7 +12,9 @@ public class ConvertAStringToMap {
         char y[] = x.toCharArray();
         int size = y.length;
         // here I create a map using Character and Integer as a Key Value pair
-        Map<Character, Integer> map = new HashMap<>();
+
+
+        Map<Character, Integer> map = new LinkedHashMap<>();
         int i = 0;
         while (i != size) {
             //Here I say if map contains a certain key and if it s false...
