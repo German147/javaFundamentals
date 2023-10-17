@@ -8,7 +8,8 @@ import static java.util.Arrays.*;
 
 public class AdjacentNumberProduct {
     public static void main(String[] args) {
-
+    int[] arrayGerman = {3,6,-2,-5,7,3};
+        System.out.println(solution3(arrayGerman));
     }
 
     public static int solution(int[] inputArray) {
@@ -35,5 +36,18 @@ public class AdjacentNumberProduct {
 
 
         return 0;
+    }
+
+    public static int solution3(int[] inputArray){
+        int firstProduct = inputArray[0] * inputArray[1];
+
+        for (int i = 0; i < inputArray.length - 1;i++){
+            int temporary = inputArray[i] * inputArray[i + 1];
+
+            if (firstProduct < temporary){
+                firstProduct = temporary;
+            }
+        }
+        return  firstProduct;
     }
 }
