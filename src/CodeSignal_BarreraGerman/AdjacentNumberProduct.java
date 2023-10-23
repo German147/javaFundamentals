@@ -9,7 +9,7 @@ import static java.util.Arrays.*;
 public class AdjacentNumberProduct {
     public static void main(String[] args) {
     int[] arrayGerman = {3,6,-2,-5,7,3};
-        System.out.println(solution3(arrayGerman));
+        System.out.println(solution4(arrayGerman));
     }
 
     public static int solution(int[] inputArray) {
@@ -50,4 +50,24 @@ public class AdjacentNumberProduct {
         }
         return  firstProduct;
     }
+
+    //here we have to find the highest product of the adjacent number in an array and print it out
+
+    public static int solution4(int[] inputArray){
+
+//first I declare a variable with the first product of the first two numbers
+         int firstProduct = inputArray[0] * inputArray[1];
+
+         for (int i = 0 ; i < inputArray.length - 1; i++){
+               int temporary = inputArray[i] * inputArray[i + 1];
+
+               if (firstProduct < temporary){
+                   firstProduct = temporary;
+               }
+         }
+
+        return firstProduct;
+    }
+
+
 }
