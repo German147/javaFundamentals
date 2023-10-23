@@ -2,6 +2,7 @@ package CodeSignal_BarreraGerman;
 
 import java.util.Arrays;
 import java.util.OptionalDouble;
+import java.util.function.Function;
 import java.util.stream.IntStream;
 
 import static java.util.Arrays.*;
@@ -60,12 +61,10 @@ public class AdjacentNumberProduct {
 
          for (int i = 0 ; i < inputArray.length - 1; i++){
                int temporary = inputArray[i] * inputArray[i + 1];
-
                if (firstProduct < temporary){
                    firstProduct = temporary;
                }
          }
-
         return firstProduct;
     }
 
