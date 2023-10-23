@@ -9,7 +9,7 @@ public class anagrams {
 //        boolean result = isAnagram("silent", "listen");
 //        System.out.println(result);
 
-        System.out.println(isAnagramFunctionalApproach("luis","luis"));
+        System.out.println(isAnagramFunctionalApproach("germ","luis"));
     }
 
     public static boolean isAnagram(String string1, String string2) {
