@@ -18,7 +18,12 @@ public class ImperativeApproach {
                 new Person("Tim", Gender.MALE)
         );
 
-//        Imperative Approach
+//        Imperative Approach : means step by step programming
+//        1- Create a list,
+//        2-Loop through this list gettig the female
+//        3- Creating th if statement
+//        4- Create a final for loop to print them
+
         List<Person> females = new ArrayList<>();
         for (Person person : people) {
             if (FEMALE.equals(person.gender)) {
