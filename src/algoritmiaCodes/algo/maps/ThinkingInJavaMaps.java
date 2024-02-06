@@ -26,7 +26,7 @@ public class ThinkingInJavaMaps {
 //                    Arrays.asList(new Rat("Freckly")));
         }
 
-        public class Person{
+        private class Person{
             private String name;
 
             public Person(String name) {
