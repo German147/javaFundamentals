@@ -2,6 +2,7 @@ package lamdaPractice.AmigosCode;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 import static lamdaPractice.AmigosCode.Gender.FEMALE;
@@ -19,8 +20,9 @@ public class DeclarativeApproach {
         );
 
         // Declarative Approach
+        Predicate<Person> personPredicate = person -> FEMALE.equals(person.gender);
         people.stream()
-                .filter(person -> FEMALE.equals(person.gender))
+                .filter(personPredicate)
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
 
